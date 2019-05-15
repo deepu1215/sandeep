@@ -49,6 +49,8 @@ public class EmployeeController {
 			this.employeeService.updateEmployee(e);
 		}
 		
+		System.out.println("main");
+		
 		return "redirect:/employees";
 		
 	}
