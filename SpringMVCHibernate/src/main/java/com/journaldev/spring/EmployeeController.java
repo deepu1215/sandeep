@@ -23,6 +23,8 @@ public class EmployeeController {
 	@Qualifier(value="employeeService")
 	public void setEmployeeService(EmployeeService es){
 		this.employeeService = es;
+		
+		System.out.println("main");
 	}
 	
 	@RequestMapping(value = "/employees", method = RequestMethod.GET)
