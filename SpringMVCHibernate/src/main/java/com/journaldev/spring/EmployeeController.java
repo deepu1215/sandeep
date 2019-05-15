@@ -25,12 +25,15 @@ public class EmployeeController {
 		this.employeeService = es;
 		
 		System.out.println("main");
+		System.out.println("main");
 	}
 	
 	@RequestMapping(value = "/employees", method = RequestMethod.GET)
 	public String listEmployees(Model model) {
 		model.addAttribute("employee", new Employee());
 		model.addAttribute("listEmployees", this.employeeService.listEmployees());
+		
+		System.out.println("main");
 		return "employee";
 	}
 	
