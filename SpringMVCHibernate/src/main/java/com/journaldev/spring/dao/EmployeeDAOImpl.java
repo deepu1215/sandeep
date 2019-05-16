@@ -27,6 +27,9 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		Session session = this.sessionFactory.getCurrentSession();
 		session.persist(e);
 		logger.info("Employee saved successfully, Employee Details="+e);
+		
+		System.out.println("main");
+		System.out.println("main");
 	}
 
 	@Override
